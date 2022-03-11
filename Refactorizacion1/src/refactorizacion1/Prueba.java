@@ -57,7 +57,7 @@ public class Prueba {
         }
 //metodo que inserta un elemento en la posicion p desplazando a la derecha todos los elementos
 
-        public void in(int[] vector) {
+        public void insertar(int[] vector) {
             int posicion = 1, i;
 //mostramos su contenido
 //Mostramos los elementos del array
@@ -68,7 +68,11 @@ public class Prueba {
             System.out.println("}");
 //Borramos el elemento
             if (posicion < vector.length) {
-                InsertaElemento(i, vector, posicion);
+                System.out.println("Elemento a insertar=" + this.valor);
+            for (i = vector.length - 1; i > posicion; i--) {
+                vector[i] = vector[i - 1];
+            }
+            vector[posicion] = this.valor;
             }
 //Mostramos los elementos del array
             System.out.print("v={");
@@ -83,14 +87,6 @@ public class Prueba {
             for (i = posicion; i < vector.length - 1; i++) {
                 vector[i] = vector[i + 1];
             }
-        }
-
-        void InsertaElemento(int i, int[] vector, int posicion) {
-            System.out.println("Elemento a insertar=" + this.valor);
-            for (i = vector.length - 1; i > posicion; i--) {
-                vector[i] = vector[i - 1];
-            }
-            vector[posicion] = this.valor;
         }
 
         void ModificaElemento(int[] vector, int posicion) {

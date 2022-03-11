@@ -25,7 +25,7 @@ public class Refactorizacion1 {
         p.valor = 10;
         p.modificar(vector);
         p.borrar(vector);
-        p.in(vector);
+        p.insertar(vector);
     }
     
 }
