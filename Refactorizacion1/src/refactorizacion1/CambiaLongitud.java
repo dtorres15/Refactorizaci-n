@@ -9,7 +9,7 @@ package refactorizacion1;
  *
  * @author diurno
  */
-public class Prueba {
+public class CambiaLongitud {
     private int valor;
 //metodo que modifica el contenido de la posicion p de un array con el valor pasado
 
