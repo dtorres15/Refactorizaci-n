@@ -9,9 +9,7 @@ package refactorizacion1;
  *
  * @author diurno
  */
-public class CambiaLongitud {
-    private int valor;
-//metodo que modifica el contenido de la posicion p de un array con el valor pasado
+public class CambiaLongitud extends Vector {
 
         public void modificar(int[] vector, int LongitudActual, int posicion) {
             int i;
@@ -97,20 +95,6 @@ public class CambiaLongitud {
             vector[posicion] = this.getValor();
         }
 
-       public void Visualizar(int[] vector, int i) {
-        System.out.print("v={");
-        for (i = 0; i < vector.length; i++) {
-            System.out.print(vector[i] + ",");
-        }
-        System.out.println("}");
-    }
-
-    /**
-     * @return the valor
-     */
-    public int getValor() {
-        return valor;
-    }
 
     /**
      * @param valor the valor to set
